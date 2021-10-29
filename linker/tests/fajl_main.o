@@ -1,0 +1,27 @@
+Tabela simbola:
+
+|myCode|myCode|0|local|1|
+|tim_cfg|abs|65296|local|2|
+|myStart|myCode|0|global|3|
+|wait|myCode|10|local|4|
+|myData|myData|0|local|5|
+|myCounter|myData|0|global|6|
+
+Tabela sekcija:
+
+Sekcija: myCode(28):
+0-4|a0 09 00 00 01
+5-9|b0 09 04 ff 10
+10-14|a0 09 04 00 00
+15-19|a0 19 00 00 05
+20-21|74 01
+22-26|52 f9 00 00 0a
+27|00
+
+Sekcija: myData(2):
+0-1|00 00
+
+Tabela relokacionih zapisa:
+
+|myCode|13|A|5|
+|myCode|25|A|1|
