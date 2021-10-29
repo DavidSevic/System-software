@@ -1,0 +1,49 @@
+Tabela simbola:
+
+|ivt|ivt|0|local|1|
+|myStart|n/a|0|global|2|
+|myCounter|n/a|0|global|3|
+|isr|isr|0|local|4|
+|term_out|abs|65280|local|5|
+|term_in|abs|65282|local|6|
+|asciiCode|abs|84|local|7|
+|isr_reset|isr|0|local|8|
+|isr_timer|isr|5|local|9|
+|isr_terminal|isr|22|local|10|
+
+Tabela sekcija:
+
+Sekcija: ivt(16):
+0-1|00 00
+2-3|00 00
+4-5|05 00
+6-7|16 00
+8-15|00 00 00 00 00 00 00 00
+
+Sekcija: isr(62):
+0-4|50 f9 00 00 00
+5-7|b0 06 12
+8-12|a0 09 00 00 54
+13-17|b0 09 04 ff 00
+18-20|a0 06 42
+21|20
+22-24|b0 06 12
+25-27|b0 16 12
+28-32|a0 09 04 ff 02
+33-37|b0 09 04 ff 00
+38-42|a0 09 04 ff d5
+43-47|a0 19 00 00 01
+48-49|70 01
+50-54|b0 09 04 00 00
+55-57|a0 16 42
+58-60|a0 06 42
+61|20
+
+Tabela relokacionih zapisa:
+
+|ivt|0|A|1|
+|ivt|4|A|1|
+|ivt|6|A|1|
+|isr|3|A|2|
+|isr|41|R|3|
+|isr|53|A|3|
